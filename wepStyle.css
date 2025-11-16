@@ -1,0 +1,237 @@
+
+/* تنظيم كل العناصر */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+/* تنسيق خلفية الصفحة */
+body{
+    background-color: rgb(122, 107, 107);
+    
+    height: 100vh;
+
+}
+/* تنظيم الصفحة المتوسط */
+.nav{
+    
+    
+    border: solid rgb(231, 103, 103) 2px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 2px 7px black;
+   
+}
+.nav:hover{
+    animation-name: nav;
+    animation-duration: 10s;
+
+    
+}
+@keyframes nav{
+    from{
+        background-color: rgb(73, 201, 233);
+    }
+    to{
+        background-color: rgb(20, 219, 103);
+    }
+}
+
+/* تنظيم الروابط العلية  */
+ul li{
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+    margin: 3px;
+}
+
+
+    
+
+/* انشاء داىرة وتنظيمها */
+.sit::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(236, 143, 163);
+    clip-path: circle(40% at right 70%);
+    z-index: -1;    
+}
+#logo{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+h2{
+    position: absolute;
+    top: -120px;
+    text-transform: uppercase;
+    text-shadow: 4px 5px 5px blanchedalmond;
+}
+h3{
+    font-size: larger;
+
+}
+.text{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-wrap: inherit;
+    text-align: center;
+    font-style: italic;
+    color: rgb(224, 217, 219);
+    text-shadow: 1px 2px 5px black;
+    
+}
+.imag{
+    position: absolute;
+    left: 50%;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 8px;
+}
+#bn{
+    position: absolute;
+    bottom: 65px;
+    width: 600px;
+
+    
+}
+#bng{
+    position: absolute;
+    bottom: 60px;
+    width: 250px;
+    height:300px;
+    right: 80%;
+    z-index: -1;
+    animation-iteration-count: infinite;
+    animation-name: bop;
+    animation-duration: 4s; 
+    animation-timing-function: linear;
+
+}
+
+@keyframes bop {
+    20%{
+        rotate:0deg;
+        
+
+    }
+
+    40%{
+        rotate: 90deg;
+
+    }
+   60%{
+        rotate: 180deg;
+    
+    }
+   80%{
+        rotate: 270deg;
+    
+    }
+    100%{
+        rotate: 360deg;
+    
+    }
+}
+#logo,a:hover{
+    color: brown;
+    font-size: larger;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(203, 224, 238, 0.7);
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 9px rgb(196, 45, 45);
+  
+}
+.conteaner{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "head head head   "
+    "sit  nav nav "
+    "foot foot foot "
+    ;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(43, 38, 38);
+    grid-area: head;
+    height: fit-content;
+    width: 100%;
+}
+.nav{
+    grid-area: nav;
+
+
+}
+.sit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -160px;
+    grid-area: sit;
+    background-color: rgba(175, 167, 167, 0.5);
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    
+
+}
+.foot{
+    display: flex;
+    position: absolute;
+    bottom: -500px;
+    height: 30%;
+    width: 100%;
+    grid-area: foot;
+    background-color: rgb(63, 60, 60);
+    justify-content: center;
+
+
+}
+.log{
+    display: flex;
+    justify-content: center;
+    border: solid 2px red;
+    margin-top: 20px;
+
+    
+    width: 500px;
+    height: 100px;   
+}
+input{
+    width: 100%;
+    
+    
+}
+    
+
+
+  
+
+

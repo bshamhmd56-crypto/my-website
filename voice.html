@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تحويل النص لكلام</title>
+    <link rel="stylesheet" href="wepVstyle.css">
+</head>
+<body>
+  <h1>مرحبا بك في موقع بشير محمد هنا يمكن تحويل نصك لصوت</h1>
+    <textarea name="textarea" id="text" rows="5" cols="40" placeholder="whrite your text...."></textarea>
+
+    <input type="button" class="click"  value="click to speak" onclick="speak()"></input>
+   <div><a href="wepHtml.html" class="back">back</a></div>
+    <script>
+        function speak(){
+           const text = document.getElementById("text").value;
+           const uttrance = new SpeechSynthesisUtterance(text);
+           uttrance.lang= "ar-SA"
+           window.speechSynthesis.speak(uttrance)
+        }
+
+
+
+
+    </script>
+    <style>
+      button{
+        width: 30px;
+        height: 25px;
+      }
+    </style>
+    
+</body>
+</html>
