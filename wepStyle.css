@@ -1,5 +1,4 @@
 
-/* تنظيم كل العناصر */
 *{
     margin: 0;
     padding: 0;
@@ -7,14 +6,14 @@
     list-style: none;
     font-family: sans-serif;
 }
-/* تنسيق خلفية الصفحة */
+
 body{
     background-color: rgb(122, 107, 107);
     
     height: 100vh;
 
 }
-/* تنظيم الصفحة المتوسط */
+
 .nav{
     
     
@@ -40,7 +39,6 @@ body{
     }
 }
 
-/* تنظيم الروابط العلية  */
 ul li{
     display: flex;
     justify-content: space-between;
@@ -49,9 +47,7 @@ ul li{
 }
 
 
-    
 
-/* انشاء داىرة وتنظيمها */
 .sit::after{
     content: '';
     width: 100%;
@@ -233,5 +229,6 @@ input{
 
 
   
+
 
 
