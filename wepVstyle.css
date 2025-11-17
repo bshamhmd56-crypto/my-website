@@ -70,43 +70,34 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* الهواتف (أقل من 768px) */
-@media (max-width: 768px) {
-  .click {
-    display: block;
-    width: 100%;
-    font-size: 18px;
-    padding: 14px;
-    text-align: center;
-  }
-
-  textarea {
-    font-size: 15px;
-    min-height: 100px;
-    padding: 8px;
-  }
-
-  h1 {
-    font-size: 22px;
-    text-align: center;
-  }
-}
-
 /* الشاشات الصغيرة جدًا (أقل من 480px) */
 @media (max-width: 480px) {
-  .click {
-    font-size: 16px;
-    padding: 12px;
-  }
+    .click {
+        font-size: 16px;
+        padding: 12px;
+    }
+    body{
+        width: 100%;
+        display: flex;
+        justify-content:center ;
+    }
 
-  textarea {
-    font-size: 14px;
-    min-height: 80px;
-    padding: 6px;
-  }
+    textarea {
+        position: absolute;
+        left: 1px;
+        
+        width: 50%;
+        height: 20%;
+        font-size: 14px;
+        min-height: 80px;
+        padding: 50px;
+    }
 
-  h1 {
-    font-size: 18px;
-    text-align: center;
-  }
-}
+    h1 {
+        display: none;
+        position: absolute;
+        width: 200px;
+        font-size: 18px;
+        text-align: center;
+    } }
+
