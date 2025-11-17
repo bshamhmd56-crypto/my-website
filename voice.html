@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="wepVstyle.css">
 </head>
 <body>
+
+  <h1>مرحبا بك في موقع بشير محمد هنا يمكن تحويل نصك لصوت</h1>
+  <hr>
+  <div class="box">
     
-    <div class="logo">  <h1>مرحبا بك في موقع بشير محمد هنا يمكن تحويل نصك لصوت</h1> </div>
-    <div class="box">
-        <textarea name="textarea" id="text" rows="5" cols="40" placeholder="whrite your text...."></textarea>
-        <input type="button" class="click"  value="click to speak" onclick="speak()"></input>
-         <div><a href="index.html" class="back">back</a></div>
-    </div>
+    <textarea name="textarea" id="text" rows="5" cols="40" placeholder="write your english text...."></textarea>
+   <div class="speak"> <input type="button" class="click"  value="click to speak" onclick="speak()"></input></div>
+    <div class="back"><a href="wepHtml.html" >back</a></div>
+
+  </div>
+
+
     <script>
         function speak(){
            const text = document.getElementById("text").value;
            const uttrance = new SpeechSynthesisUtterance(text);
-           uttrance.lang= "ar-SA";
-           window.speechSynthesis.speak(uttrance);
+           uttrance.lang= "ar-SA"
+           window.speechSynthesis.speak(uttrance)
         }
 
+
+
+
     </script>
-    
 </body>
-
 </html>
-
-
