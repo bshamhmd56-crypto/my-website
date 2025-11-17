@@ -2,29 +2,16 @@
     font-size: larger;
     font-style: italic;
 }
-textarea{
+.box{
     background-color: rgb(12, 58, 42);
     width: 80%;
-    height: 60%;
-    margin:20;
+    height: 80%;
     color: aliceblue;
+}
+.logo{
+    color: brown;    
+}
 
-}
-h1{
-    position: relative;
-    top: -260px;
-    left: 50%;
-    color: brown;
-    
-}
-div{
-    position: relative;
-    bottom: -230px;
-    right: 60%;
-    width: 100px;
-    background-color: rgb(49, 176, 235);
-    
-}
 .click{
     position: relative;
     bottom: -230px;
@@ -43,35 +30,9 @@ body{
 
 
 }
-/* التنسيقات الأساسية */
-.click {
-  padding: 12px 24px;
-  font-size: 16px;
-  border: none;
-  background-color: #3498db;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-textarea {
-  width: 100%;
-  min-height: 120px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  resize: vertical;
-}
-
-h1 {
-  font-size: 28px;
-  text-align: left;
-  margin-bottom: 15px;
-}
 
 /* الشاشات الصغيرة جدًا (أقل من 480px) */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .click {
         font-size: 16px;
         padding: 12px;
@@ -82,10 +43,9 @@ h1 {
         justify-content:center ;
     }
 
-    textarea {
+     .box{
         position: absolute;
-        left: 1px;
-        
+        left: 1px;  
         width: 50%;
         height: 20%;
         font-size: 14px;
@@ -93,11 +53,12 @@ h1 {
         padding: 50px;
     }
 
-    h1 {
+    .logo {
         display: none;
         position: absolute;
         width: 200px;
         font-size: 18px;
         text-align: center;
     } }
+
 
