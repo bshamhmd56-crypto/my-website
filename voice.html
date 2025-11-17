@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="wepVstyle.css">
 </head>
 <body>
-  <h1>مرحبا بك في موقع بشير محمد هنا يمكن تحويل نصك لصوت</h1>
-    <textarea name="textarea" id="text" rows="5" cols="40" placeholder="whrite your text...."></textarea>
-
-    <input type="button" class="click"  value="click to speak" onclick="speak()"></input>
-   <div><a href="index.html" class="back">back</a></div>
+    
+    <div class="logo">  <h1>مرحبا بك في موقع بشير محمد هنا يمكن تحويل نصك لصوت</h1> </div>
+    <div class="box">
+        <textarea name="textarea" id="text" rows="5" cols="40" placeholder="whrite your text...."></textarea>
+        <input type="button" class="click"  value="click to speak" onclick="speak()"></input>
+         <div><a href="index.html" class="back">back</a></div>
+    </div>
     <script>
         function speak(){
            const text = document.getElementById("text").value;
@@ -20,18 +22,10 @@
            window.speechSynthesis.speak(uttrance);
         }
 
-
-
-
     </script>
-    <style>
-      button{
-        width: 30px;
-        height: 25px;
-      }
-    </style>
     
 </body>
 
 </html>
+
 
