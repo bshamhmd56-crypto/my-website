@@ -41,4 +41,72 @@ body{
     align-items: center;
     justify-content: center;
 
+
+}
+/* التنسيقات الأساسية */
+.click {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* الهواتف (أقل من 768px) */
+@media (max-width: 768px) {
+  .click {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  textarea {
+    font-size: 15px;
+    min-height: 100px;
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+/* الشاشات الصغيرة جدًا (أقل من 480px) */
+@media (max-width: 480px) {
+  .click {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  textarea {
+    font-size: 14px;
+    min-height: 80px;
+    padding: 6px;
+  }
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
 }
