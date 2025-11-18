@@ -70,6 +70,7 @@ ul li{
 }
 h2{
     position: absolute;
+    color:red;
     top: -120px;
     text-transform: uppercase;
     text-shadow: 4px 5px 5px blanchedalmond;
@@ -236,6 +237,7 @@ input{
 
 
   
+
 
 
 
