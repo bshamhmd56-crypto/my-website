@@ -69,10 +69,19 @@ ul li{
     border-radius: 20px;
 
 }
+h1{
+     position: absolute;
+    color:red;
+    top: -120px;
+    text-transform: uppercase;
+    text-shadow: 4px 5px 5px blanchedalmond;
+}
+    
+}
 h2{
     position: absolute;
     color:red;
-    top: -120px;
+    top: -90px;
     text-transform: uppercase;
     text-shadow: 4px 5px 5px blanchedalmond;
 }
@@ -237,6 +246,7 @@ input{
 
 
   
+
 
 
 
