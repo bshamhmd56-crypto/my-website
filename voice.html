@@ -1,35 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة تحويل النص لكلام</title>
-    <link rel="stylesheet" href="wepVstyle.css">
+  <meta charset="UTF-8">
+  <title>تحويل النص إلى كلام مع تنزيل</title>
+  <link rel="stylesheet" href="wepVstyle.css">
 </head>
 <body>
+  <h1>تحويل النص إلى كلام مع خيار التنزيل</h1>
+  <textarea id="text" rows="5" cols="40" placeholder="اكتب النص هنا..."></textarea>
+  <br>
+  <button onclick="speak()">تشغيل الصوت</button>
+  <button onclick="downloadAudio()">تنزيل الصوت</button>
 
-  <h1>مرحبا بك في موقع بشير محمد هنا يمكن تحويل نصك لصوت</h1>
-  <hr>
-  <div class="box">
-    
-    <textarea name="textarea" id="text" rows="5" cols="40" placeholder="write your english text...."></textarea>
-   <div class="speak"> <input type="button" class="click"  value="click to speak" onclick="speak()"></input></div>
-    <div class="back"><a href="wepHtml.html" >back</a></div>
+  <script>
+    let audioChunks = [];
+    let mediaRecorder;
 
-  </div>
+    function speak() {
+      const text = document.getElementById("text").value;
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "ar-SA";
 
+      // تشغيل الصوت
+      window.speechSynthesis.speak(utterance);
 
-    <script>
-        function speak(){
-           const text = document.getElementById("text").value;
-           const uttrance = new SpeechSynthesisUtterance(text);
-           uttrance.lang= "ar-SA"
-           window.speechSynthesis.speak(uttrance)
-        }
+      // تسجيل الصوت باستخدام MediaRecorder
+      const audioContext = new AudioContext();
+      const dest = audioContext.createMediaStreamDestination();
+      const source = audioContext.createMediaStreamSource(dest.stream);
 
+      mediaRecorder = new MediaRecorder(dest.stream);
+      mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+      mediaRecorder.start();
 
+      utterance.onend = () => {
+        mediaRecorder.stop();
+      };
+    }
 
-
-    </script>
+    function downloadAudio() {
+      if (audioChunks.length > 0) {
+        const blob = new Blob(audioChunks, { type: 'audio/mp3' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "speech.mp3";
+        a.click();
+      } else {
+        alert("لم يتم تسجيل أي صوت بعد!");
+      }
+    }
+  </script>
 </body>
 </html>
