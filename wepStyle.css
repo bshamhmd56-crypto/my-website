@@ -26,8 +26,8 @@ body{
    
 }
 .nav:hover{
-    animation-name: nav;
-    animation-duration: 10s;
+    border-radius: 20px;
+    
 
     
 }
@@ -234,6 +234,7 @@ input{
 
 
   
+
 
 
 
