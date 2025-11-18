@@ -36,9 +36,9 @@ body{
     from{
         background-color: rgb(73, 201, 233);
     }
-    to{
-        background-color: rgb(20, 219, 103);
-    }
+.tow{
+     background-color: rgb(20, 219, 103);
+}
 }
 
 /* تنظيم الروابط العلية  */
@@ -246,6 +246,7 @@ input{
 
 
   
+
 
 
 
