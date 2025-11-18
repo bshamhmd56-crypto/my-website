@@ -82,7 +82,7 @@ h3{
 }
 .text{
     position: absolute;
-    font-size:20px
+    font-size:40px
     color:red;
     bottom:20px;
     width: 200px;
@@ -91,7 +91,7 @@ h3{
     text-align: center;
     font-style: italic;
     color: rgb(224, 217, 219);
-    text-shadow: 1px 8px 5px black;
+    text-shadow: 1px 12px 5px black;
     
 }
 .imag{
@@ -238,6 +238,7 @@ input{
 
 
   
+
 
 
 
