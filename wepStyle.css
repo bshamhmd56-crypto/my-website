@@ -80,6 +80,8 @@ h3{
 }
 .text{
     position: absolute;
+    font-size:20px
+    color:red;
     bottom:20px;
     width: 200px;
     height: 200px;
@@ -234,6 +236,7 @@ input{
 
 
   
+
 
 
 
