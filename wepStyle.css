@@ -80,6 +80,7 @@ h3{
 }
 .text{
     position: absolute;
+    bottom:20px;
     width: 200px;
     height: 200px;
     text-wrap: inherit;
@@ -146,7 +147,7 @@ h3{
 }
 #logo,a:hover{
     color: brown;
-    font-size: larger;
+    
 }
 .nav{
     display: flex;
@@ -233,5 +234,6 @@ input{
 
 
   
+
 
 
