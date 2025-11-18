@@ -6,7 +6,6 @@
     text-decoration: none;
     list-style: none;
     font-family: sans-serif;
-    
 }
 /* تنسيق خلفية الصفحة */
 body{
@@ -27,8 +26,8 @@ body{
    
 }
 .nav:hover{
-    border-radius: 20px;
-    
+    animation-name: nav;
+    animation-duration: 10s;
 
     
 }
@@ -36,9 +35,9 @@ body{
     from{
         background-color: rgb(73, 201, 233);
     }
-.tow{
-     background-color: rgb(20, 219, 103);
-}
+    to{
+        background-color: rgb(20, 219, 103);
+    }
 }
 
 /* تنظيم الروابط العلية  */
@@ -69,30 +68,35 @@ ul li{
     border-radius: 20px;
 
 }
-    
+#ha{
+    color: rgb(21, 6, 224);
+    position: absolute;
+    top: -90px;
+    text-transform: uppercase;
+    text-shadow: 4px 5px 5px rgb(15, 10, 3);
+
 }
 h2{
+    color: rgb(53, 11, 238);
     position: absolute;
-    color:red;
-    top: -12px;
+    top: -120px;
     text-transform: uppercase;
-    text-shadow: 4px 5px 5px blanchedalmond;
+    text-shadow: 4px 5px 5px black;
 }
 h3{
     font-size: larger;
 
 }
 .text{
-    position: absolute;
-    font-size:50px
-    color:black;
-    bottom:20px;
+    position: relative;
+    bottom: -90px;
     width: 200px;
     height: 200px;
     text-wrap: inherit;
     text-align: center;
     font-style: italic;
-    text-shadow: 1px 30px 5px red;
+    color: rgb(224, 217, 219);
+    text-shadow: 1px 2px 5px black;
     
 }
 .imag{
@@ -239,22 +243,5 @@ input{
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
