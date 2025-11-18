@@ -6,7 +6,7 @@
     text-decoration: none;
     list-style: none;
     font-family: sans-serif;
-    color:red;
+    color:black;
 }
 /* تنسيق خلفية الصفحة */
 body{
@@ -82,7 +82,7 @@ h3{
 }
 .text{
     position: absolute;
-    font-size:40px
+    font-size:50px
     color:red;
     bottom:20px;
     width: 200px;
@@ -90,7 +90,6 @@ h3{
     text-wrap: inherit;
     text-align: center;
     font-style: italic;
-    color: rgb(224, 217, 219);
     text-shadow: 1px 12px 5px black;
     
 }
@@ -238,6 +237,7 @@ input{
 
 
   
+
 
 
 
