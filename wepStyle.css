@@ -1,4 +1,5 @@
 
+/* تنظيم كل العناصر */
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +7,14 @@
     list-style: none;
     font-family: sans-serif;
 }
-
+/* تنسيق خلفية الصفحة */
 body{
     background-color: rgb(122, 107, 107);
     
     height: 100vh;
 
 }
-
+/* تنظيم الصفحة المتوسط */
 .nav{
     
     
@@ -39,6 +40,7 @@ body{
     }
 }
 
+/* تنظيم الروابط العلية  */
 ul li{
     display: flex;
     justify-content: space-between;
@@ -47,7 +49,9 @@ ul li{
 }
 
 
+    
 
+/* انشاء داىرة وتنظيمها */
 .sit::after{
     content: '';
     width: 100%;
@@ -142,6 +146,7 @@ h3{
 }
 #logo,a:hover{
     color: brown;
+    font-size: larger;
 }
 .nav{
     display: flex;
@@ -221,55 +226,12 @@ h3{
 }
 input{
     width: 100%;
-        
-}
-/* الهواتف (أقل من 768px) */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 10px;
-    margin: 0;
-    background-color: #f9f9f9; /* مثال لتغيير الخلفية */
-  }
-
-  h1 {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  button, a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-  }
-}
-
-/* الشاشات الصغيرة جدًا (أقل من 480px) */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    padding: 5px;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 13px;
-  }
+    
+    
 }
     
 
 
   
-
-
 
 

@@ -39,47 +39,4 @@ form button{
     padding: 5px 10px;
     flex-grow: 1;
     cursor: pointer;
-
-}
-/* الهواتف (أقل من 768px) */
-@media (max-width: 768px) {
-  form {
-    width: 100%;
-    padding: 10px;
-  }
-
-  input, button {
-    width: 100%;
-    font-size: 15px;
-    padding: 10px;
-  }
-
-  a {
-    display: block;
-    text-align: center;
-    margin-top: 12px;
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 22px;
-    text-align: center;
-  }
-}
-
-/* الشاشات الصغيرة جدًا (أقل من 480px) */
-@media (max-width: 480px) {
-  input, button {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  a {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 18px;
-    text-align: center;
-  }
 }
